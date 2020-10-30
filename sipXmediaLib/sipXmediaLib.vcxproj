@@ -1126,43 +1126,12 @@
   <ItemGroup>
     <ProjectReference Include="contrib\libspeex\win32\VS2003\libspeexdsp\libspeexdsp.vcxproj">
       <Project>{03207781-0d1c-4db3-a71d-45c608f28dbd}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgamrwb\plgamrwb.vcxproj">
-      <Project>{8bab1fbb-9ead-4ef2-8b72-4b4d0397adeb}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgamr\plgamr.vcxproj">
-      <Project>{8bab1fbb-9ead-4ef2-8b72-4b4d0397adea}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgg722\plgg722.vcxproj">
-      <Project>{f5e037b1-f23e-422c-8772-f230bebe00bd}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgg726\plgg726.vcxproj">
-      <Project>{718ec989-9d48-463d-b5e9-6e7018b8476c}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plggsm\plggsm.vcxproj">
-      <Project>{8ae1ab5c-9815-42d8-9a09-0b4f1e64b4bb}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgilbc\plgilbc.vcxproj">
-      <Project>{6442c7de-e500-4ba2-b821-98092f1edcaf}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="src\mp\codecs\plgpcmapcmu\plgpcmapcmu.vcxproj">
       <Project>{a9c94d26-c90d-4860-8195-56929e893757}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="src\mp\codecs\plgspeex\plgspeex.vcxproj">
-      <Project>{4f7fda11-42a4-4556-a631-15aa785cd1c1}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="src\mp\codecs\plgtones\plgtones.vcxproj">
       <Project>{50e09c77-6077-4149-8b80-996217363a2f}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

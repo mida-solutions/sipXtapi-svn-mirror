@@ -1127,6 +1127,9 @@
     <ProjectReference Include="contrib\libspeex\win32\VS2003\libspeexdsp\libspeexdsp.vcxproj">
       <Project>{03207781-0d1c-4db3-a71d-45c608f28dbd}</Project>
     </ProjectReference>
+    <ProjectReference Include="src\mp\codecs\plgl16\plgl16.vcxproj">
+      <Project>{a9c94d26-c90d-4860-8195-56929e893710}</Project>
+    </ProjectReference>
     <ProjectReference Include="src\mp\codecs\plgpcmapcmu\plgpcmapcmu.vcxproj">
       <Project>{a9c94d26-c90d-4860-8195-56929e893757}</Project>
     </ProjectReference>

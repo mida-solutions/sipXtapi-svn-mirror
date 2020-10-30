@@ -17,7 +17,7 @@
 
 // APPLICATION INCLUDES
 #include <mp/codecs/PlgDefsV1.h>
-#include <CodecL16.h>
+#include "CodecL16.h"
 
 // EXTERNAL VARIABLES
 // CONSTANTS

@@ -51,35 +51,35 @@ public:
    bool is_lock_free() const
    {return false;}
 
-   void store(T val, ::memory_order  = memory_order_seq_cst)
+   void store(T val, ::memory_order  = ::memory_order_seq_cst)
    {OsLock lock(mMutex); mVal = val;}
 
-   T load(::memory_order = memory_order_seq_cst) const
+   T load(::memory_order = ::memory_order_seq_cst) const
    {OsLock lock(mMutex); return mVal;}
 
    operator T() const
    {return load();}
 
-//   T exchange(T val, ::memory_order = memory_order_seq_cst);
+//   T exchange(T val, ::memory_order = ::memory_order_seq_cst);
 //   bool compare_exchange(T &, T , ::memory_order, ::memory_order);
-//   bool compare_exchange(T &, T , ::memory_order = memory_order_seq_cst);
+//   bool compare_exchange(T &, T , ::memory_order = ::memory_order_seq_cst);
 
    void fence(::memory_order) const
    {};
 
-   T fetch_add(T val, ::memory_order = memory_order_seq_cst)
+   T fetch_add(T val, ::memory_order = ::memory_order_seq_cst)
    {OsLock lock(mMutex); T temp = mVal; mVal += val; return temp;}
 
-   T fetch_sub(T val, ::memory_order = memory_order_seq_cst)
+   T fetch_sub(T val, ::memory_order = ::memory_order_seq_cst)
    {OsLock lock(mMutex); T temp = mVal; mVal -= val; return temp;}
 
-   T fetch_and(T val, ::memory_order = memory_order_seq_cst)
+   T fetch_and(T val, ::memory_order = ::memory_order_seq_cst)
    {OsLock lock(mMutex); T temp = mVal; mVal &= val; return temp;}
 
-   T fetch_or(T val, ::memory_order = memory_order_seq_cst)
+   T fetch_or(T val, ::memory_order = ::memory_order_seq_cst)
    {OsLock lock(mMutex); T temp = mVal; mVal |= val; return temp;}
 
-   T fetch_xor(T val, ::memory_order = memory_order_seq_cst)
+   T fetch_xor(T val, ::memory_order = ::memory_order_seq_cst)
    {OsLock lock(mMutex); T temp = mVal; mVal ^= val; return temp;}
 
    OsAtomic<T>() : mMutex(0) {};
